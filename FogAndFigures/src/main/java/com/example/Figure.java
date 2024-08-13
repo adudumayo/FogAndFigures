@@ -2,7 +2,6 @@ package com.example;
 
 import javax.swing.JPanel;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -15,7 +14,6 @@ public class Figure extends JPanel {
     private int figureHeight = 20;
 
     public Figure() {
-        // constructor
         this.setFocusable(true);
         this.requestFocusInWindow();
         this.addKeyListener(new KeyAdapter() {
@@ -28,7 +26,7 @@ public class Figure extends JPanel {
 
     private void moveFigure(KeyEvent e) {
         int key = e.getKeyCode();
-        int steps = 20;
+        int steps = 50;
 
         if (key == KeyEvent.VK_RIGHT) {
             figureX += steps;
