@@ -26,7 +26,7 @@ public class Figure extends JPanel {
 
     private void moveFigure(KeyEvent e) {
         int key = e.getKeyCode();
-        int steps = 50;
+        int steps = 20;
 
         if (key == KeyEvent.VK_RIGHT) {
             figureX += steps;
