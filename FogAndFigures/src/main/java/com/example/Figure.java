@@ -16,6 +16,8 @@ public class Figure extends JPanel {
 
     public Figure() {
         // constructor
+        this.setFocusable(true);
+        this.requestFocusInWindow();
     }
 
     @Override
