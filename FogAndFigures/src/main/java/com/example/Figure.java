@@ -32,6 +32,12 @@ public class Figure extends JPanel {
 
         if (key == KeyEvent.VK_RIGHT) {
             figureX += steps;
+        } else if (key == KeyEvent.VK_DOWN) {
+            figureY += steps;
+        } else if (key == KeyEvent.VK_LEFT) {
+            figureX -= steps;
+        } else if (key == KeyEvent.VK_UP) {
+            figureY -= steps;
         }
 
         repaint();
