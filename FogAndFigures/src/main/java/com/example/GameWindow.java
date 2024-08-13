@@ -15,5 +15,8 @@ public class GameWindow {
 
         Figure figure = new Figure();
         window.add(figure);
+
+        Home home = new Home();
+//        window.add(home);
     }
 }
