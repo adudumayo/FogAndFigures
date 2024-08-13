@@ -18,6 +18,23 @@ public class Figure extends JPanel {
         // constructor
         this.setFocusable(true);
         this.requestFocusInWindow();
+        this.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                moveFigure(e);
+            }
+        });
+    }
+
+    private void moveFigure(KeyEvent e) {
+        int key = e.getKeyCode();
+        int steps = 20;
+
+        if (key == KeyEvent.VK_RIGHT) {
+            figureX += steps;
+        }
+
+        repaint();
     }
 
     @Override
