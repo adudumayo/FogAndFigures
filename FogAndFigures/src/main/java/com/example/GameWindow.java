@@ -1,7 +1,7 @@
 package com.example;
 
 import javax.swing.*;
-import java.awt.Dimension;
+import java.awt.*;
 
 public class GameWindow {
     public static void main(String[] args) {
