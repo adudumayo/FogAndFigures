@@ -16,7 +16,26 @@ public class GameWindow {
         Figure figure = new Figure();
         window.add(figure);
 
-        Home home = new Home();
-//        window.add(home);
+        try { Thread.sleep(4000); } catch (InterruptedException e) { e.printStackTrace(); }
+
+        window.remove(figure);
+        window.revalidate();
+        window.repaint();
+
+        // Home home = new Home();
+        // window.add(home);
+        // window.revalidate();
+        // window.repaint();
+
+        try { Thread.sleep(4000); } catch (InterruptedException e) { e.printStackTrace(); }
+
+        // window.remove(home);
+        // window.revalidate();
+        // window.repaint();
+
+        window.add(figure);
+        window.revalidate();
+        window.repaint();
+
     }
 }

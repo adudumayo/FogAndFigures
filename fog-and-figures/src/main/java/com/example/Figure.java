@@ -37,7 +37,7 @@ public class Figure extends JPanel {
         } else if (key == KeyEvent.VK_UP) {
             figureY -= steps;
         }
-
+        System.out.println(String.format("You are at position (%d, %d)", this.figureX, this.figureY));
         repaint();
     }
 
